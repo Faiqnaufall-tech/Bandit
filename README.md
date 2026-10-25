@@ -58,4 +58,28 @@ ls
 cat ./--spaces\ in\ this\ filename--
 
 ```
+---
+
+### Level 3 - 4
+* **Host:** `bandit.labs.overthewire.org`
+* **Port:** `2220`
+* **Username:** `bandit3`
+* **Password Saat Ini:** `bandit3`
+
+---
+
+### Tujuan
+> membongkar file hidden yang berlapis
+
+### Perintah & Eksplorasi
+**Command yang digunakan:**
+```bash
+bandit3@bandit:~/inhere$ ls
+bandit3@bandit:~/inhere$ ls -a
+.  ..  ...Hiding-From-You
+bandit3@bandit:~/inhere$ du ./...Hiding-From-You
+4       ./...Hiding-From-You
+bandit3@bandit:~/inhere$ cat ./...Hiding-From-You
+
+```
 
