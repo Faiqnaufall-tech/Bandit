@@ -24,7 +24,7 @@ cat
 * **Host:** `bandit.labs.overthewire.org`
 * **Port:** `2220`
 * **Username:** `bandit1`
-* **Password Saat Ini:** `bandit1`
+* **Password Saat Ini:** `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR`
 
 ---
 
@@ -44,7 +44,7 @@ cat ./-
 * **Host:** `bandit.labs.overthewire.org`
 * **Port:** `2220`
 * **Username:** `bandit2`
-* **Password Saat Ini:** `bandit2`
+* **Password Saat Ini:** `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB`
 
 ---
 
@@ -64,7 +64,7 @@ cat ./--spaces\ in\ this\ filename--
 * **Host:** `bandit.labs.overthewire.org`
 * **Port:** `2220`
 * **Username:** `bandit3`
-* **Password Saat Ini:** `bandit3`
+* **Password Saat Ini:** `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME`
 
 ---
 
@@ -88,7 +88,7 @@ bandit3@bandit:~/inhere$ cat ./...Hiding-From-You
 * **Host:** `bandit.labs.overthewire.org`
 * **Port:** `2220`
 * **Username:** `bandit4`
-* **Password Saat Ini:** `bandit4`
+* **Password Saat Ini:** `xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq`
 
 ---
 
@@ -112,6 +112,30 @@ bandit4@bandit:~/inhere$ file ./*
 ./-file08: data
 ./-file09: data
 bandit4@bandit:~/inhere$ cat ./-file07
+
+```
+---
+
+### Level 5 - 6
+* **Host:** `bandit.labs.overthewire.org`
+* **Port:** `2220`
+* **Username:** `bandit5`
+* **Password Saat Ini:** `6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG`
+  
+---
+
+### Tujuan
+> mencari password di sebuah file yang berada di folder inhere yang mana di folder tersebut terdapat banyak folder. terdapat clue yaitu human-readable, 1033 bytes in size, not executable.
+
+### Perintah & Eksplorasi
+**Command yang digunakan:**
+```bash
+bandit5@bandit:~/inhere$ find . -type f -size 1033c
+./maybehere07/.file2
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        bandit5@bandit:~/inhere$
+bandit5@bandit:~/inhere$
 
 ```
 ---
