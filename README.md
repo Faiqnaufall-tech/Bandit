@@ -82,4 +82,37 @@ bandit3@bandit:~/inhere$ du ./...Hiding-From-You
 bandit3@bandit:~/inhere$ cat ./...Hiding-From-You
 
 ```
+---
+
+### Level 4 - 5 
+* **Host:** `bandit.labs.overthewire.org`
+* **Port:** `2220`
+* **Username:** `bandit4`
+* **Password Saat Ini:** `bandit4`
+
+---
+
+### Tujuan
+> membongkar file yang berada di folder inhere yang mana di dalam folder tersebut terdapat banyak file dan harus mencari tahu file mana yang terdapat kode password
+
+### Perintah & Eksplorasi
+**Command yang digunakan:**
+```bash
+bandit4@bandit:~/inhere$ ls -a
+-file00  -file01  -file02  -file03  -file04  -file05  -file06  -file07  -file08  -file09  .  ..
+bandit4@bandit:~/inhere$ file ./*
+./-file00: data
+./-file01: data
+./-file02: data
+./-file03: data
+./-file04: data
+./-file05: data
+./-file06: data
+./-file07: ASCII text
+./-file08: data
+./-file09: data
+bandit4@bandit:~/inhere$ cat ./-file07
+
+```
+---
 
